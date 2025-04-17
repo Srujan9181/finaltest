@@ -3,7 +3,7 @@ import { useState } from "react";
 import axios from "axios";
 import right from "./assets/Frame.png"
 import logo from "./assets/logo.png"
-import "./signin.css"
+import "./styles/signin.css"
 import { useNavigate } from "react-router-dom";
 
 function signin() {
@@ -27,11 +27,7 @@ function signin() {
 
           alert("new user created")
           navigate("/login")
-          Setfirstname=''
-          Setlastname=''
-          email=''
-          password=''
-          cnfpassword=''
+          
           
         }
         

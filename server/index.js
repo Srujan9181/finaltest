@@ -3,18 +3,24 @@ const app=express()
 const userrouter=require("./Routes/user")
 const mongoose=require("mongoose")
 const cors=require("cors")
+const dotenv=require("dotenv")
+dotenv.config()
 app.use(cors())
+app.use(express.json())
+
+const PORT=process.env.PORT
+const db=process.env.db
 
 
 app.use('/user',userrouter)
 try{
-    mongoose.connect("mongodb+srv://srujan9181:wyZrpCCCnrH02JMR@cluster0.lht0rkc.mongodb.net/")
+    mongoose.connect(db)
     console.log("db connected")
 }
 catch(err){
     console.log(err)
 }
 
-app.listen(5353,function(){
-    console.log("http://localhost:5353/")
+app.listen(PORT,function(){
+    console.log(`http://localhost:${PORT}/user/users}`)
 })
