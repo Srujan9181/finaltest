@@ -41,7 +41,7 @@ function login() {
             <div className={styles.logoform}>
                 <h2>Sign in to your Plexify</h2>
                {/*<form onSubmit={handlelogin} className={styles.formdata}>*/} 
-               <form onSubmit={()=>navigate("dashboard")} className={styles.formdata}>
+               <form onSubmit={()=>navigate("/dashboard")} className={styles.formdata}>
                     <label htmlFor="username">Username</label> <br />
                     <input type="text" id='username' value={username} onChange={(e)=>SetUsername(e.target.value)} /> <br />
                     <label htmlFor="password">Password</label> <br />
