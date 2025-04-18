@@ -1,0 +1,62 @@
+.main{
+    margin-top: 1%;
+}
+.search{
+    width: 20%;
+    margin-top: 2%;
+    background-color: #B6B6B6;
+    border: none;
+    outline: none;
+}
+.tkts{
+    display: flex;
+    flex-direction: row;
+    gap: 1%;
+}
+
+.tkts *{
+    border: none;
+    color: #888888;
+}
+
+.tickets{
+    margin-bottom: 2%;
+    margin-top:2%;
+}
+
+.allticktes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+
+.ticketdesign{
+    display: flex;
+    width: 97%;
+    border: 2px solid #E7E7E7;
+    flex-direction: column;
+    margin-bottom: 1%;
+
+}
+.info{
+    border-bottom:2px solid #E7E7E7;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.user{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.message{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.samecolor{
+    color: #84818A;
+    font-size: xx-small;
+}
