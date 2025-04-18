@@ -5,9 +5,11 @@ import right from "./assets/Frame.png"
 import logo from "./assets/logo.png"
 
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
 
 
 function login() {
+    let navigate=useNavigate()
     const [username,SetUsername]=useState("")
     const [password,SetPassword]=useState("")
     async function handlelogin(e){
@@ -28,6 +30,7 @@ function login() {
         }
         else{
             alert("wrong credentials")
+            
         }
     }
   return (
@@ -37,7 +40,8 @@ function login() {
             <img src={logo} alt="" className={styles.logo}/>
             <div className={styles.logoform}>
                 <h2>Sign in to your Plexify</h2>
-                <form onSubmit={handlelogin} className={styles.formdata}>
+               {/*<form onSubmit={handlelogin} className={styles.formdata}>*/} 
+               <form onSubmit={()=>navigate("dashboard")} className={styles.formdata}>
                     <label htmlFor="username">Username</label> <br />
                     <input type="text" id='username' value={username} onChange={(e)=>SetUsername(e.target.value)} /> <br />
                     <label htmlFor="password">Password</label> <br />
