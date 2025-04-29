@@ -2,6 +2,7 @@ const express=require("express")
 const userrouter=express.Router()
 const usermodel=require("../models/user")
 const bcrypt=require("bcrypt")
+const messagemodel=require("../models/messages")
 
 userrouter.use(express.json())
 
@@ -57,5 +58,21 @@ userrouter.post('/signin',async function(req,res){
         res.send(err)
     }
 
+})
+
+
+
+
+userrouter.post('/adminmessage',async function (req,res) {
+    let {sender,message,reciver}=req.body
+    try{
+    let newadminmessage=await new messagemodel({sender,reciver,message})
+    await newadminmessage.save()
+    res.send("admin messaged inserted")
+    }
+    catch(err){
+        res.send(err)
+        console.log(err)
+    }
 })
 module.exports=userrouter

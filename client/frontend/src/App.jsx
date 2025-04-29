@@ -11,6 +11,7 @@ import Members from "./Members"
 import Settings from "./Settings"
 import Bot from './Bot'
 import Userhome from "./Userhome";
+import Usersidebot from "./Usersidebot";
 function App() {
   return (
     <BrowserRouter>
@@ -19,8 +20,9 @@ function App() {
         <Route path="/userhome" element={<Userhome />}></Route>
         <Route path="signin" element={<Signin />}></Route>
         <Route path="login" element={<Login />} ></Route>
+       
         <Route path="dashboard" element={<Dashboard />}>
-
+          <Route path="userbot" element={<Usersidebot />} ></Route>
           <Route path="" element={<Dashboardhome />}></Route>
           <Route path="contact" element={<Contact />}></Route>
           <Route path="stats" element={<Stats />}></Route>

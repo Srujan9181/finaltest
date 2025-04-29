@@ -1,0 +1,85 @@
+
+
+.main{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    
+    
+}
+.chats{
+    border-right: 2px solid rgb(240, 240, 240);
+    height: 100vh;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+    
+
+}
+.ticket{
+    border: 2px solid rgb(240, 240, 240);
+    height: 100vh;
+    width: 40%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    
+}
+.members{
+    border: 2px solid rgb(240, 240, 240);
+    height: 100vh;
+    width: 35%;
+    
+}
+.Contact{
+    
+    padding: 5%;
+}
+.users{
+    display: flex;
+    gap: 10px;
+}
+.userimg{
+    height: 30px;
+    width: 30px;
+    background-color: rgb(217, 217, 217);
+    border-radius: 50%;
+}
+
+
+.ticket *{
+    background-color: white;
+}
+
+.tktname{
+ height: 2%;
+}
+       
+.tktmessage{
+    height: 80%;
+    
+
+
+}
+
+.tktinput{
+    height: 10%;
+    outline: none;
+    resize: none;
+    padding: 5px;
+
+}
+
+.usernamechat{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.userright{
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 20px;
+    margin-bottom: 5px;
+}

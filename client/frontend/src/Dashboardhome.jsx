@@ -47,9 +47,9 @@ function Dashboardhome() {
                 </div>
                 <div onClick={()=>navigate("contact")} style={{textDecoration:"underline",color:"#184E7F"}}>open ticket</div>
             </div>
-            
-
         </div>
+
+        
 
 
         
